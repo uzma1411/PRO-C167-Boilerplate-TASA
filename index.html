@@ -15,12 +15,35 @@
 
   <!-- import aframe and then ar.js with image tracking / location based features -->
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <!-- Library for NFT
+  https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js
+  -->
   
   <script src="./play-on-click.js"></script>
 
   
   <!-- style for the loader -->
-  
+  <style>
+      .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+      }
+    </style>
 
 </head>
 
@@ -32,8 +55,13 @@
   
 
   <!-- a-frame scene -->
-  <a-scene 
-   
+  <a-scene >
+       <a-entity id="camera" camera position="0 0 10"></a-entity>
+
+    <!-- assets -->
+
+
+    <!-- NFT and a-video -->
 
   </a-scene>
 
